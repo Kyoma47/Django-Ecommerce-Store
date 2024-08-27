@@ -7,8 +7,6 @@ pip install -r requirements.txt
 django-admin startproject core .  
 python manage.py startapp store 
 
-
-
 # Migration :
 python manage.py makemigrations
 
@@ -42,9 +40,17 @@ Running migrations:
   Applying sessions.0001_initial... OK
   Applying store.0001_initial... OK
 
-
 # Add New User :
 python manage.py createsuperuser
 
 # Run Server :
 python manage.py runserver
+
+# Run Tests :
+python manage.py test
+
+# Generate test report : 
+coverage report 
+coverage run --omit='*/.venv/*' manage.py test
+coverage report 
+coverage html 
