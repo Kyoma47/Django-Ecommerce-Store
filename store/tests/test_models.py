@@ -13,7 +13,7 @@ class TestCategoriesModel( TestCase ):
         data = self.data1
         self.assertTrue( isinstance(data, Category) )
 
-    def test_category_model_entry(self):
+    def test_category_model_return(self):
         # Test Category model return name  
         data = self.data1
         self.assertEqual( str(data) , 'django' )
@@ -37,3 +37,4 @@ class TestProductsModel( TestCase ):
         # Test Product model data insertion/types/field attributes 
         data = self.data1
         self.assertTrue( isinstance(data, Product) )
+        self.assertEqual( str(data), 'django beginners' )
