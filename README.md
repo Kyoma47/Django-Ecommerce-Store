@@ -41,3 +41,10 @@ Running migrations:
   Applying auth.0012_alter_user_first_name_max_length... OK
   Applying sessions.0001_initial... OK
   Applying store.0001_initial... OK
+
+
+# Add New User :
+python manage.py createsuperuser
+
+# Run Server :
+python manage.py runserver
