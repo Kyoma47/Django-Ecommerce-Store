@@ -48,6 +48,7 @@ python manage.py runserver
 
 # Run Tests :
 python manage.py test
+python manage.py store.test
 
 # Generate test report : 
 coverage report 
