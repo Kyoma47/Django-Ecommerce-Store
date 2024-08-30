@@ -113,7 +113,7 @@
             <div class="card card-product">
                <div class="card-body">
                   <div class="text-center position-relative">
-                     <a href="./pages/shop-single.html"><img src="{{ product.image.url }}" alt="{{ product.title }}" class="mb-3 img-fluid" /></a>
+                     <a href="{{ product.get_absolute_url }}"><img src="{{ product.image.url }}" alt="{{ product.title }}" class="mb-3 img-fluid" /></a>
                      <div class="card-product-action">
                         <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                            <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-html="true" title="Quick View"></i>
@@ -125,7 +125,7 @@
                   <div class="text-small mb-1">
                      <a href="#!" class="text-decoration-none text-muted"><small>{{ product.category.name }}</small></a>
                   </div>
-                  <h2 class="fs-6"><a href="./pages/shop-single.html" class="text-inherit text-decoration-none">{{ product.title }}</a></h2>
+                  <h2 class="fs-6"><a href="{{ product.get_absolute_url }}" class="text-inherit text-decoration-none">{{ product.title }}</a></h2>
                   <div class="text-warning">
                      <small>
                         <i class="bi bi-star-fill"></i>
